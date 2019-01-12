@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp">
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <TableRow android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </TableLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:id="@+id/dayText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Понедельник, 1 января"/>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                        />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8:00-9:20"/>
+                <TextView
+                        android:id="@+id/subj7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="НЕТ ЗАНЯТИЙ"/>
+                <TextView
+                        android:id="@+id/class7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ауд. 72"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                        android:id="@+id/time8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                <TextView
+                        android:id="@+id/subj8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+                <TextView
+                        android:id="@+id/class8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
