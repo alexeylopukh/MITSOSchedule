@@ -143,5 +143,11 @@ class ConverterURL{
             }
             return url
         }
+        fun time(text: String?): String{
+            return if (text != null){
+                val arr = text.split("-")
+                arr[0]+"\n"+arr[1]
+            } else ""
+        }
     }
 }

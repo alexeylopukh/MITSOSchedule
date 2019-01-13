@@ -19,7 +19,7 @@ class rwAdapter(val subjList: ArrayList<SubjModel>?) : RecyclerView.Adapter<rwAd
     }
 
     override fun onBindViewHolder(p0: rwAdapter.ViewHolder, p1: Int) {
-        p0.timeSh.text = subjList!![p1].time
+        p0.timeSh.text = ConverterURL.time(subjList!![p1].time!!)
         p0.subjectSh.text = subjList[p1].subject
         p0.classSh.text = subjList[p1].classRoom
     }
