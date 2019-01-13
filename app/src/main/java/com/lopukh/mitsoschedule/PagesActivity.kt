@@ -1,5 +1,6 @@
 package com.lopukh.mitsoschedule
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.view.ViewPager
@@ -14,14 +15,14 @@ class PagesActivity : AppCompatActivity() {
     private lateinit var recyclerTabLayout: RecyclerTabLayout
     private lateinit var pagerAdapter: SchedulePagerAdapter
     var schedule: ArrayList<DayModel> = ArrayList()
-    val URL = "https://www.mitso.by/schedule/Dnevnaya/ME%60OiM/2%20kurs/1720%20ISiT/0#sch"
+    var URL = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pages)
         recyclerTabLayout = findViewById(R.id.recyclerTabLayout)
-
+        URL = intent.getStringExtra("url")
         getRasp()
     }
 
