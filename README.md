@@ -1,4 +1,4 @@
-## Crossnote project
+## MITSO Schedule project
 If you want to test the application:
 [Download apk](https://github.com/dirtyalex/MITSOSchedule/raw/master/MITSO%20Schedule.apk)
 
