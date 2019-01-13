@@ -7,20 +7,25 @@ import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+import com.nshmura.recyclertablayout.RecyclerTabLayout
 
 class PagesActivity : AppCompatActivity() {
 
+    private lateinit var recyclerTabLayout: RecyclerTabLayout
     private lateinit var pagerAdapter: SchedulePagerAdapter
     var schedule: ArrayList<DayModel> = ArrayList()
     val URL = "https://www.mitso.by/schedule/Dnevnaya/ME%60OiM/2%20kurs/1720%20ISiT/0#sch"
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pages)
+        recyclerTabLayout = findViewById(R.id.recyclerTabLayout)
+
         getRasp()
     }
 
-    fun getRasp(){
+    private fun getRasp(){
         doAsync {
             val doc: Document = Jsoup.connect(URL).get()
             val divs = doc.select("div>div[class=rp-ras-data]")
@@ -51,6 +56,7 @@ class PagesActivity : AppCompatActivity() {
                 val vp = findViewById<ViewPager>(R.id.vpPage)
                 pagerAdapter = SchedulePagerAdapter(supportFragmentManager, schedule)
                 vp.adapter = pagerAdapter
+                recyclerTabLayout.setUpWithViewPager(vp)
             }
         }
     }

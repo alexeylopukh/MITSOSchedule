@@ -14,4 +14,7 @@ class SchedulePagerAdapter(fragmentManager: FragmentManager, private val days: A
         return days.size
     }
 
+    override fun getPageTitle(position: Int): CharSequence? {
+        return "${days[position].day}, ${days[position].date}"
+    }
 }
